@@ -63,6 +63,25 @@
 	font-weight: 100;
 	line-height: 25px;
 }
+.about .heading{
+	font-size: 70px;
+	margin-top: 80px;
+	margin-left: 80px;
+	text-align: center;
+}
+.about .heading::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10;
+	transition: 0.5s;
+}
+.about .heading:hover::after{
+	width: 100%;
+}
 .about .row{
 	display: flex;
 	align-items: center;
@@ -75,17 +94,18 @@
 	flex:1 1 48rem;
 	padding:2rem 1rem;
 	padding-left: 6rem;
+	text-align: center;
 }
 
 .about .row .info h3{
 	font-size: 2rem;
-	color:var(--yellow);
+	color: rgb(7, 7, 7);
 	padding:1rem 0;
 	font-weight: normal;
 }
 
 .about .row .info h3 span{
-	color:#eee;
+	color:#009688;
 	padding:0 .5rem;
 }
 
@@ -98,7 +118,7 @@
 
 .about .row .counter .box{
 	width:20rem;
-	background:#222;
+	background:#009688;
 	text-align: center;
 	padding: 2rem;
 	margin:2rem;
@@ -106,10 +126,20 @@
 
 .about .row .counter .box span{
 	font-size: 4rem;
-	color:var(--yellow);
+	color:black;
 }
 
 .about .row .counter .box h3{
 	font-size: 2rem;
 	color:#fff;
+}
+.links h2{
+	font-size: 50px;
+	text-align: center;
+	color: #feffff;
+}
+.links h3{
+	font-size: 40px;
+	text-align: center;
+	color: aqua;
 }
